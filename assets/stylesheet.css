@@ -139,12 +139,6 @@ button:active {
     padding: 5% 0 5% 0;
 }
 
-@media only screen and (max-width: 900px) {
-    .project-grid {
-        display: flex;
-    }
-}
-
 .project-content {
     max-width: 600px;
     background-color: aliceblue;
@@ -295,5 +289,18 @@ main {
     .grid {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .contact-me {
+        width: 90%;
+        height: 80%;
+    }
+
+    #contact {
+        height: 90%;
+    }
+    #close {
+        width: 45px;
+        height: 45px;
     }
 }
