@@ -1,5 +1,11 @@
 html {
     font-family: "Roboto", 'Times New Roman', Times, serif;
+    background-color: rgb(177, 177, 177);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 .header-content {
@@ -60,6 +66,48 @@ button:hover {
     background-color: rgb(255, 145, 0);
 }
 
+.project-img button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.projects-grid {
+    display: grid;
+    grid: 1fr 1fr 1fr / 2fr 2fr;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 5%;
+    margin: 0 5% 5% 5%;
+    padding: 5% 0 5% 0;
+}
+
+.project-content {
+    max-width: 600px;
+}
+
+.project-grid .project-img {
+    grid-column: 2 / 3;
+}
+
+.project-content h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.project-content p {
+    padding-top: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.project-img img {
+    border-radius: 10px;
+    border: 2px solid black;
+    max-width: 100%;
+    height: auto;
+}
+
 main {
     padding-top: 83px;
 }
@@ -89,16 +137,16 @@ main {
 }
 .me {
     justify-self: end;
+    margin-right: 10%;
     z-index: 2;
     grid-area: 1 / 2 / 5 / 5;
 }
 
 .me img {
     height: 1100px;
-    object-fit: cover;
 }
 
-h1 {
+.focus h1 {
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
     font-style: normal;
@@ -123,6 +171,7 @@ h1 {
     margin-top: 6%;
     text-align: center;
     font-size: 2rem;
+    margin: 3%;
 }
 
 .grid {
