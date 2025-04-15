@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Permanent+Marker&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/reset.css">
+        <link rel="stylesheet" href="./assets/stylesheet.css">
+        <meta charset="UTF-8">
+        <title>Reid Van Vliet</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <img height="100%" src="./assets/images/Logo.png">
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="./Home Page.html">Home</a></li>
+                        <li><a href="./Projects.html">Projects</a></li>
+                        <li><a href="./Home Page.html">Offers</a></li>
+                    </ul>
+                </nav>
+
+                <button type="button" id="contact">Contact Me</button>
+        </header>
+    
+        <div class="contact-me" id="contactMe">
+            <button class="close" id="close"><span>X</span></button>
+            <h1>Contact Me</h1>
+            <form action="./Offers.html" method="GET">
+                <textarea id="message" name="message" rows="15" cols="50" placeholder="Let me know about your job!" required></textarea>
+                <br>
+                <input class="submit" type="submit" name="submit">
+            </form>
+            <h1>___________________________</h1>
+            <h2>250-711-0023</h2>
+        </div>
+
+        <main>
+        <p id="offers"></p>
+        </main>
+        <script src="./assets/javaScript.js"></script>
+</html>

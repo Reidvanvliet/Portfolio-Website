@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Reid Van Vliet</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Permanent+Marker&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./assets/reset.css">
         <link rel="stylesheet" href="./assets/stylesheet.css">
@@ -20,12 +22,24 @@
                     <ul>
                         <li><a href="./Home Page.html">Home</a></li>
                         <li><a href="./Projects.html">Projects</a></li>
-                        <li><a href="./Home Page.html">Life</a></li>
+                        <li><a href="./Offers.html">Offers</a></li>
                     </ul>
                 </nav>
 
-                <button type="button">Contact Me</button>
+                <button type="button" id="contact">Contact Me</button>
         </header>
+
+        <div class="contact-me" id="contactMe">
+            <button class="close" id="close"><span>X</span></button>
+            <h1>Contact Me</h1>
+            <form action="./Offers.html" method="GET">
+                <textarea id="message" name="message" rows="15" cols="50" placeholder="Let me know about your job!" required></textarea>
+                <br>
+                <input class="submit" type="submit" name="submit">
+            </form>
+            <h1>___________________________</h1>
+            <h2>250-711-0023</h2>
+        </div>
 
         <main>
             <div class="projects-grid">
@@ -36,7 +50,7 @@
 
                 <div class="project-img">
                     <img class="rts" src="./assets/images/RTS.png">
-                    <button>Visit Site</button>
+                    <a href="./RTS solutions/RTS Solutions.html"><button>Visit Site</button></a>
                 </div>
 
                 <div class="project-content">
@@ -47,7 +61,7 @@
 
                 <div class="project-img">
                     <img class="rts" src="./assets/images/Fotomatic.png">
-                    <button>Visit Site</button>
+                    <a href="./Fotomatic/fotomatic_broken/index.html"><button>Visit Site</button></a>
                 </div>
                 
                 <div class="project-content">
@@ -57,9 +71,10 @@
 
                 <div class="project-img">
                     <img class="rts" src="./assets/images/TeaShop.png">
-                    <button>Visit Site</button>
+                    <a href="./Tea Shop/Tea Shop.html"><button>Visit Site</button></a>
                 </div> 
             </div>           
         </main>
+        <script src="./assets/javaScript.js"></script>
     </body>
 </html>
